@@ -1,5 +1,5 @@
 #!/bin/bash
-git clone https://github.com/stefanobernardi/stripe-sinatra-example.git .
+git clone https://github.com/hossamhossny/sinatra.git .
 gem install sinatra shotgun
 if [ "$RACK_ENV" == "production" ]; 
 then 
