@@ -1,4 +1,5 @@
 #!/bin/bash
+git clone git://github.com/sinatra/sinatra-recipes.git
 gem install sinatra shotgun
 if [ "$RACK_ENV" == "production" ]; 
 then 
