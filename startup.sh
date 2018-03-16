@@ -1,6 +1,6 @@
 #!/bin/bash
 git clone https://github.com/hossamhossny/sinatra.git .
-gem install sinatra shotgun
+gem install sinatra shotgun sinatra-seo httparty hashie geokit
 if [ "$RACK_ENV" == "production" ]; 
 then 
   bundle install --without development test
