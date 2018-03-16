@@ -4,7 +4,7 @@ gem install sinatra shotgun
 if [ "$RACK_ENV" == "production" ]; 
 then 
   bundle install --without development test
-  ruby $MAIN_APP_FILE
+  shotgun -I /usr/src/app $MAIN_APP_FILE -p 4567 -o '0.0.0.0' #ruby $MAIN_APP_FILE
 else
   bundle install
   if [ "$RACK_ENV" == "test" ]; 
